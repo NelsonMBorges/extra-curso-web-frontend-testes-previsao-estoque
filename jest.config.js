@@ -1,8 +1,5 @@
-const { criarProduto } = require("../src/index");
-
-test("Criação de um produto", () => {
-    const produto = criarProduto("Celular", 1500, 10);
-    expect(produto.nome).toBe("Celular");
-    expect(produto.preco).toBe(1500);
-    expect(produto.estoque).toBe(10);
-});
+module.exports = {
+    testEnvironment: 'node',  // Define o ambiente de testes como Node.js
+    testMatch: ['**/__tests__/**/*.test.js'],  // Define onde os arquivos de teste estarão localizados
+    verbose: true  // Para exibir mais detalhes na saída dos testes
+  };
